@@ -1,11 +1,56 @@
-#video_overlays {
+/* Latest compiled and minified CSS included as External Resource*/
+
+#outer {
+  width: 100%;
+  display: block;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+#home-top-video {
+  left: 0%;
+  top: 0%;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.46);
-  z-index: 2;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+  z-index: -1;
+}
+
+#home-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.hero-video {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  /**position: absolute;**/
+  z-index: -1;
+}
+
+.hero-video-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.hero-video:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(255,0,255,0.2); //Change as per your requirement
 }
 
 html,body {
